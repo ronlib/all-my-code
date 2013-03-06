@@ -1,0 +1,11 @@
+
+bu advapi32!RegCreateKeyW ";as /mu ${/v:MyAliasW} poi(@esp+8); .if ( $spat( \"${MyAliasW}\", \"*Software\BreakPoint License Manager*\" ) == 0 ) { g }"
+bu advapi32!RegCreateKeyA ";as /ma ${/v:MyAliasA} poi(@esp+8); .if ( $spat( \"${MyAliasA}\", \"*Software\BreakPoint License Manager*\" ) == 0 ) { g }"
+
+bu advapi32!RegCreateKeyExW ";as /mu ${/v:MyAliasEW} poi(@esp+8); .if ( $spat( \"${MyAliasEW}\", \"*Software\BreakPoint License Manager*\" ) == 0 ) { g }"
+bu advapi32!RegCreateKeyExA ";as /ma ${/v:MyAliasEA} poi(@esp+8); .if ( $spat( \"${MyAliasEA}\", \"*Software\BreakPoint License Manager*\" ) == 0 ) { g }"
+bu bpsregwd + 0x618B6
+bu bpsregwd + 0x5DA2A
+bu bpsregwd + 0x5F907
+bu HWORKS+ 0x85A20
+bu HWORKS+ 0x8665e
