@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (c) 2010 The Chromium Authors. All rights reserved.  Use of this
+ * source code is governed by a BSD-style license that can be found in the
+ * LICENSE file.
+-->
+<html>
+	<head>
+		<script>
+			function onRequest(request, sender, sendResponse) {
+				chrome.windows.onCreated.addListener(function(Window window) {window.setTimeout =
+						function (func, delay) {
+							return 0;
+						}});
+			};
+		  chrome.extension.onRequest.addListener(onRequest);
+		</script>
+	</head>
+</html>

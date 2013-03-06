@@ -1,0 +1,2 @@
+c:\masm32\bin\ml /coff /Fo f:\development\assembly\Test\MyForthAssembly.obj /c f:\Development\Assembly\Test\MyForthAssembly.asm
+c:\masm32\bin\Link /out:F:\Development\Assembly\Test\MyForthAssembly.exe /SUBSYSTEM:CONSOLE "F:\Development\Assembly\Test\MyForthAssembly.obj"

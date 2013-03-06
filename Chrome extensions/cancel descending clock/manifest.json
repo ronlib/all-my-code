@@ -1,0 +1,19 @@
+{
+  "name" : "Remove descending clock",
+  "version" : "1.0",
+  "background_page" : "background.html",
+  "permissions": [
+	"tabs", "http://*/*", "https://*/*"
+	],
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://www.f2h.co.il/*",
+        "https://www.f2h.co.il/*"
+      ],
+      "js" : ["testJS.js"],
+      "run_at" : "document_end",
+      "all_frames" : false
+    }
+  ]
+}

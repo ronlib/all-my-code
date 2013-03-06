@@ -1,0 +1,2 @@
+"F:\Development\Tools\vsyasm.exe" -f win32 -o "F:\Development\Assembly\64 bit\32 bit transition\Test.obj" "F:\Development\Assembly\64 bit\32 bit transition\Test.asm"
+"C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\amd64\link" /out:"F:\Development\Assembly\64 bit\32 bit transition\Test.exe" /SUBSYSTEM:CONSOLE /entry:start "F:\Development\Assembly\64 bit\32 bit transition\Test.obj"

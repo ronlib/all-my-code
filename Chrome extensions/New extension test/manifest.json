@@ -1,0 +1,17 @@
+{
+  "name" : "Page action by content",
+  "version" : "1.0",
+  "description" : "Shows a page action for HTML pages containing the word 'sandwich'",
+  "background_page" : "background.html",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js" : ["testJS.js","jquery-1.4.2.min.js"],
+      "run_at" : "document_end",
+      "all_frames" : false
+    }
+  ]
+}

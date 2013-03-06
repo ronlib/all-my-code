@@ -1,0 +1,2 @@
+c:\masm32\bin\ml /coff /Fo f:\development\assembly\Test\MySecondAssembly.obj /c f:\Development\Assembly\Test\MySecondAssembly.asm
+c:\masm32\bin\Link /out:F:\Development\Assembly\Test\MySecondAssembly.exe /SUBSYSTEM:CONSOLE "F:\Development\Assembly\Test\MySecondAssembly.obj"
