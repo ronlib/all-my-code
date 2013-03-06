@@ -1,0 +1,11 @@
+{
+  "name" : "Remove 99fm commercial",
+  "version" : "1.0",
+  "content_scripts" : [    {
+      "matches" : ["http://radio.coolsite.co.il/*"],
+      "js" : ["remove_commercial.js"],
+	  "run_at" : "document_idle",
+      "all_frames" : true
+    }
+  ]
+}
