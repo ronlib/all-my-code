@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+	<style>
+		a.test {
+			font-weight: bold;
+		}
+		
+		a.test1 {
+			font-style: italic
+		}
+	</style>
+  </head>
+  <body>
+    <a href="http://jquery.com/" class="test1">jQuery</a>
+    <script src="jquery.js"></script>
+    <script>
+	$(document).ready(function() {
+		$('a').click( function (event) {
+				alert('Thanks for visiting!');
+				event.preventDefault();
+				$(this).hide("slow");
+				}
+			);
+
+		$("a").removeClass("test1");
+		$("a").addClass("test");
+
+		var $calculator = $("div[name='calculator']:first");
+		var $calc_table = $("<table></table>");
+		$calculator.append($calc_table);
+		$calc_table.append($("<tr></tr><tr></tr><tr></tr>"));
+		$("tr").eq(0).text("first");
+		$("tr").eq(1).text("second");
+		$("tr").eq(2).text("third");
+		}
+		
+	);
+	
+	
+	
+    </script>
+	
+	<div name="calculator">aaa</div>
+  </body>
+</html>
