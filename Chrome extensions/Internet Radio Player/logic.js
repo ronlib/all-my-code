@@ -31,7 +31,7 @@ Player.prototype.buildPlayerElement = function (mediaUrl)
 						 src: mediaUrl,
 						 name:"Player",
 						 width:"100%",
-						 height:"30px",
+						 height:"35px",
 						 autostart:"true",
 						 showcontrols:"0",
 						 showstatusbar:"0",
@@ -55,8 +55,15 @@ Player.prototype.createListElement = function (datastoreElement)
 		this,
 		function(player)
 		{
+			if (undefined !== player.data.current_selected_station_element)
+			{
+				player.data.current_selected_station_element.removeAttr('class');
+			}
+			player.data.current_selected_station_element = $(this);			
+			$(this).attr('class', 'selected_station');
+			
 			$player = player.data.buildPlayerElement($(this).children('.address').eq(0).attr('address'));
-			$("#player").html($player);
+			$("#player").html($player);			
 		}
 	);
 	

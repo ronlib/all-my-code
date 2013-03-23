@@ -39,27 +39,24 @@ border: none;
 #navcontainer li
 {
 border-bottom: 1px solid #90bade;
+border-left: 10px solid #1958b7;
+border-right: 10px solid #508fc4;
 margin: 0;
 }
 
-#navcontainer li a
+#navcontainer li.selected_station
 {
-display: block;
-padding: 5px 5px 5px 0.5em;
-border-left: 10px solid #1958b7;
+border-bottom: 1px solid #90bade;
+border-left: 10px solid #FF8080;
 border-right: 10px solid #508fc4;
-background-color: #2175bc;
-color: #fff;
-text-decoration: none;
-width: 100%;
+margin: 0;
 }
+
 
 #navcontainer li div
 {
 display: block;
 padding: 5px 5px 5px 0.5em;
-border-left: 10px solid #1958b7;
-border-right: 10px solid #508fc4;
 background-color: #2175bc;
 color: #fff;
 text-decoration: none;
