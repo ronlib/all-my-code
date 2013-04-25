@@ -1,0 +1,13 @@
+{
+	"name" : "Page action by content",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description" : "Disable UpF descending clock",
+	"content_scripts": [
+		{
+			"matches": ["http://www.upf.co.il/file/*"],      
+			"js": ["jquery.js", "background.js"]
+	    }
+  	],
+  	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
