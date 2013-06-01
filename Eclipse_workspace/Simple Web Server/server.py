@@ -10,6 +10,9 @@ class ThreadedHttpServer(SocketServer.ThreadingMixIn, BaseHTTPServer.HTTPServer)
     
     def __init__(self, *args, **kwargs):
         self.connections = []
+#         Can't' use super(ThreadedHttpServer, self) syntax because it is valid
+#         for new style classes only, meaning that they inherit from object, 
+#         which HTTPServer does not.
         BaseHTTPServer.HTTPServer.__init__(self, *args, **kwargs)
     
     def get_request(self):
